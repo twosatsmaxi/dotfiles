@@ -22,6 +22,65 @@
           {
             "type": "command",
             "command": "bd prime"
+          },
+          {
+            "type": "command",
+            "command": "tmux select-pane -t \"$TMUX_PANE\" -T \"🤖 $(basename $CLAUDE_PROJECT_DIR)\""
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "tmux select-pane -t \"$TMUX_PANE\" -T \"⚡ $(basename $CLAUDE_PROJECT_DIR)\""
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "tmux select-pane -t \"$TMUX_PANE\" -T \"💬 $(basename $CLAUDE_PROJECT_DIR)\""
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "tmux select-pane -t \"$TMUX_PANE\" -T \"💬 $(basename $CLAUDE_PROJECT_DIR)\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "tmux select-pane -t \"$TMUX_PANE\" -T \"🤖 $(basename $CLAUDE_PROJECT_DIR)\""
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "tmux select-pane -t \"$TMUX_PANE\" -T \"\""
           }
         ]
       }
