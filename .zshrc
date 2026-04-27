@@ -122,3 +122,5 @@ export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"
 
 # Added by Antigravity
 export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
+alias mux='tmuxinator'
+source /opt/homebrew/Cellar/tmuxinator/3.3.8/libexec/gems/tmuxinator-3.3.8/completion/tmuxinator.zsh
